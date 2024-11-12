@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors;
+  }
+}
+
+.dark {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.dark .input-field {
+  @apply bg-gray-800 border-gray-700 text-white;
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+.section-title {
+  @apply text-xl font-semibold mb-4;
+}
+
+.form-section {
+  @apply bg-white rounded-lg shadow-md p-6 space-y-6;
+}
+
+.dark .form-section {
+  @apply bg-gray-800;
+}
+
+.button-primary {
+  @apply px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors;
+}
+
+.button-secondary {
+  @apply px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors;
+}
+
+.dark .button-secondary {
+  @apply bg-gray-700 text-gray-200 hover:bg-gray-600;
+}
